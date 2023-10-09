@@ -1,1 +1,2 @@
-# explorer
+# Trilha Explorer - RocketSeat
+
