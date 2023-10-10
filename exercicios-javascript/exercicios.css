@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #exercicios {
+    margin-top: 30px;
+  }
+  
+  p {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  input {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .result {
+    color: green;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .result b {
+    color: #007bff;
+  }
+  
+  #resultadoSoma,
+  #resultadoSubtracao,
+  #resultadoMultiplicacao,
+  #resultadoDivisao,
+  #resultadoIsNumber,
+  #resultadoIsString,
+  #resultadoIsBoolean,
+  #resultadoIsPar,
+  #resultadoIsImpar {
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+  }
+  .enunciado {
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none;
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="exercicios.css"
+/>
+  <title> ❤️ Explorer - Exercícios JavaScript By Wanuzia ❤️</title>
+</head>
+<body>
+  <header>
+    <h1>Exercícios JavaScript 💻</h1>
+  </header>
+  <main>
+   <div id="content">
+        <section id="exercicios">
+          <p class="enunciado">1. Crie um script que exiba a mensagem "Hello World!" em um alerta no navegador.</p>
+            <label for="hello">Clique no botão para exibir o alert: </label>
+            <button onclick="helloWorld()" id="hello">Hello World!</button>
+
+          <p class="enunciado">2. Crie um script que declare duas variáveis e exiba o resultado da soma entre elas.</p>
+
+          <label for="numero1Soma">Insira o primeiro número:</label>
+          <input id="numero1Soma" type="number" required/>
+          <label for="numero2Soma">Insira o segundo número:</label>
+          <input id="numero2Soma" type="number" required />
+          <button onclick="somar()">SOMAR</button>
+          <p class="result hidden" id="sumResult">Resultado: <b id="resultadoSoma"></b></p>
+
+          <p class="enunciado">3. Crie um script que declare uma variável e verifique se o seu valor é um número. Se for, exiba a mensagem "É um número", caso contrário, exiba a mensagem "Não é um número".</p>
+          <label for="isNumber">Digite um caracter e direi se é um número ou não.</label>
+          <input id="isNumber" required>
+          <button onclick="isNumber()">Verificar</button>
+          <p class="result hidden" id="numberResult">Resultado: <b id="resultadoIsNumber"></b></p>
+
+          <p class="enunciado">4. Crie um script que declare uma variável e verifique se o seu valor é uma string. Se for, exiba a mensagem "É uma string", caso contrário, exiba a mensagem "Não é uma string".</p>
+          <label for="isString">Digite um caracter e direi se é uma string ou não.</label>
+          <input id="isString" required>
+          <button onclick="isString()">Verificar</button>
+          <p class="result hidden" id="stringResult">Resultado: <b id="resultadoIsString"></b></p>
+
+          <p class="enunciado">5. Crie um script que declare uma variável e verifique se o seu valor é um booleano. Se for, exiba a mensagem "É um booleano", caso contrário, exiba a mensagem "Não é um booleano".</p>
+          <label for="isBoolean">Digite um caracter e direi se é um booleano ou não.</label>
+          <input id="isBoolean" required>
+          <button onclick="isBoolean()">Verificar</button>
+          <p class="result hidden" id="boolResult">Resultado: <b id="resultadoIsBoolean"></b></p>
+
+        <p class="enunciado">6. Crie um script que declare duas variáveis e exiba o resultado da subtração entre elas.</p>
+        <label for="numero1Subtracao">Insira o primeiro número:</label>
+        <input id="numero1Subtracao" type="number" required/>
+        <label for="numero2Subtracao">Insira o segundo número:</label>
+        <input id="numero2Subtracao" type="number" required />
+        <button onclick="subtrair()">SUBTRAIR</button>
+        <p class="result hidden" id="subResult">Resultado: <b id="resultadoSubtracao"></b></p>
+
+        <p class="enunciado">7. Crie um script que declare duas variáveis e exiba o resultado da multiplicação entre elas.</p>
+        <label for="numero1Multiplicacao">Insira o primeiro número:</label>
+        <input id="numero1Multiplicacao" type="number" required/>
+        <label for="numero2Multiplicacao">Insira o segundo número:</label>
+        <input id="numero2Multiplicacao" type="number" required />
+        <button onclick="multiplicar()">MULTIPLICAR</button>
+        <p class="result hidden" id="multResult">Resultado: <b id="resultadoMultiplicacao"></b></p>
+
+        <p class="enunciado">8. Crie um script que declare duas variáveis e exiba o resultado da divisão entre elas.</p>
+        <label for="numero1Divisao">Insira o primeiro número:</label>
+        <input id="numero1Divisao" type="number" required/>
+        <label for="numero2Divisao">Insira o segundo número:</label>
+        <input id="numero2Divisao" type="number" required />
+        <button onclick="dividir()">DIVIDIR</button>
+        <p class="result hidden" id="divResult">Resultado: <b id="resultadoDivisao"></b></p>
+
+        <p class="enunciado">9. Crie um script que declare uma variável e verifique se o seu valor é um número par. Se for, exiba a mensagem "É um número par", caso contrário, exiba a mensagem "Não é um número par".</p>
+        <label for="isPar">Digite um número e direi se é par ou não.</label>
+        <input id="isPar" type="number" required>
+        <button onclick="isPar()">Verificar</button>
+        <p class="result hidden" id="parResult">Resultado: <b id="resultadoIsPar"></b></p>
+
+        <p class="enunciado">10. Crie um script que declare uma variável e verifique se o seu valor é um número ímpar. Se for, exiba a mensagem "É um número ímpar", caso contrário, exiba a mensagem "Não é um número ímpar".</p>
+        <label for="isImpar">Digite um número e direi se é ímpar ou não.</label>
+        <input id="isImpar" type="number" required>
+        <button onclick="isImpar()">Verificar</button>
+        <p class="result hidden" id="imparResult">Resultado: <b id="resultadoIsImpar"></b></p>
+        </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por ♥ Wanuzia Braga ♥</p>
+    </footer>
+  <script src="exercicios.js"></script>
+</body>
+</html>
