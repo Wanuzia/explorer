@@ -60,6 +60,9 @@ button {
     text-align: center;
 
 }
+button:hover {
+    background: #FFA500;
+}
 
 .hidden {
     display: none;
@@ -84,7 +87,7 @@ button {
     font-weight: 400;
 
     animation-name: appear;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -102,4 +105,39 @@ button {
   }
 .opened-cookie {
   }
+.screen-closed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.screen-closed figure {
+    padding: 0;
+    cursor: pointer;
+}
+
+.screen-closed figure:hover img {
+    animation: shake 0.2s infinite;
+  }
   
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(5deg);
+    }
+    40% {
+      transform: rotate(-5deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    80% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

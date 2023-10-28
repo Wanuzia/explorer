@@ -12,18 +12,18 @@
 </head>
 <body>
     <main>
-        <div class="screen-closed hidden">
+        <div id="closed" class="screen-closed">
             <h1>Qual é a sua sorte de hoje?</h1>
             <p>Abra o biscoito e descubra!</p>
             <figure>
-                <img id="closed" class="closed-cookie" src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698446876/biscoito-da-sorte/closed-cookie.svg"/>
+                <img id="closed-cookie" class="closed-cookie" src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698446876/biscoito-da-sorte/closed-cookie.svg"/>
             </figure>
         </div>
-        <div class="screen-opened ">
-            <h1 id="opened">Aqui está a sua sorte de hoje:</h2>
-            <p id="message" class="sorted-message">Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+        <div id="opened" class="hidden">
+            <h1>Aqui está a sua sorte de hoje:</h2>
+            <p id="message" class="sorted-message"></p>
             <figure>
-                <img id="opened" class="opened-cookie" src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698446885/biscoito-da-sorte/opened-cookie.svg"/>
+                <img class="opened-cookie" src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698446885/biscoito-da-sorte/opened-cookie.svg"/>
             </figure>
             <button id="btnClose">Abrir outro biscoito</button>
         </div>
