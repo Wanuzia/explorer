@@ -13,7 +13,22 @@ body {
     place-items: center;
     font-size: 1.6rem;
     height: 100vh;
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
 }
+ 
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
 body, button, input {
     font-family: 'DM Sans', sans-serif;
 }

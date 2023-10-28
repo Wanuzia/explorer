@@ -21,7 +21,7 @@ const messages = [
     "Lamentar aquilo que não temos é desperdiçar aquilo que já possuímos.",
     "Uma bela flor é incompleta sem suas folhas.",
     "Sem o fogo do entusiasmo, não há o calor da vitória.",
-    "Não há melhor negócio que a vida. A gente há obtém a troco de nada.",
+    "Não há melhor negócio que a vida. A gente a obtém a troco de nada.",
     "O riso é a menor distância entre duas pessoas.",
     "Você é jovem apenas uma vez. Depois precisa inventar outra desculpa.",
     "É mais fácil conseguir o perdão do que a permissão.",
@@ -36,7 +36,7 @@ const messages = [
 const closedCookie = document.querySelector('#closed-cookie');
 const openedClass = document.querySelector('#opened');
 const closedClass = document.querySelector('#closed');
-const openedCookie = document.querySelector('#opened');
+const openedCookie = document.querySelector('#btnClose');
 
 closedCookie.addEventListener('click', openMessage);
 openedCookie.addEventListener('click', toggleCookies);
