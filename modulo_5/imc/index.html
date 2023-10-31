@@ -17,17 +17,20 @@
             <form>
                 <label for="peso">Peso (Kg)</label>
                 <input type="number" name="peso" id="peso" placeholder="60" />
-                <label for="altura">Altura (m)</label>
+                <label for="altura">Altura (cm)</label>
                 <input type="number" name="altura" id="altura" placeholder="165" />
-                <button>Calcular IMC <img src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698666778/arrow-up-right_t11sd6.svg"/></button>
+                <button id="calcular">Calcular IMC <img src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698666778/arrow-up-right_t11sd6.svg"/></button>
             </form>
         </div>
-        <div class="modal-result">
+        <div id="modal" class="modal-result">
             <div class="result-content card">
-                <h2 class="title">Seu IMC é de XX</h2>
+                <h2 id="imc-result" class="title"></h2>
                 <button class="close-modal">X</button>
             </div>
-       </div>
+        </div>
+        <div id="alert" class="alert-error">
+            Digite somente números
+        </div>
     </main>
     <script src="script.js"></script>
 </body>

@@ -11,6 +11,7 @@
     --color-primary-light: #F2F2F2;
     --color-secondary: #0C3440;
     --color-secondary-dark: #040924;
+    --alert-error: #F03E3E;
 }
 
 body {
@@ -22,13 +23,13 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
     border-radius: 5px;
     background: #FFF;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
     padding: 4.8rem 4.4rem;
     text-align: left;
     width: min(42.8rem, 80%);
@@ -114,4 +115,26 @@ form input:focus {
     position: absolute;
     top: -2.1rem;
     right: 0;
+}
+
+.alert-error {
+    background: var(--alert-error);
+    color: var(--color-primary-light);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: .8rem;
+    font-weight: 700;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform .5s;
+}
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
