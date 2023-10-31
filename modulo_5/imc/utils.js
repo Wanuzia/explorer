@@ -29,6 +29,12 @@ export const imc = (weight, height) => {
     return (weight / ((height / 100) ** 2)).toFixed(2);
 }
 
+export const showIMCModalResult = (imcValue) => {
+    const imcResult = document.getElementById('imc-result');
+    Modal.open();
+    return imcResult.innerHTML = `Seu IMC é de ${imcValue}`;
+}
+
 window.addEventListener('keydown', (event) => {
     if(event.key === 'Escape') {
         Modal.close();
