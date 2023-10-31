@@ -10,12 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Dancing+Script&family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>---
     <main>
-        <div class="start">
-            <h1>Cálculo de IMC</h1>
-            <h2>Em desenvolvimento...</h2>
+        <div class="card">
+            <h1 class-"title">Cálculo de IMC</h1>
+            <form>
+                <label for="peso">Peso (Kg)</label>
+                <input type="number" name="peso" id="peso" placeholder="60" />
+                <label for="altura">Altura (m)</label>
+                <input type="number" name="altura" id="altura" placeholder="165" />
+                <button>Calcular IMC <img src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1698666778/arrow-up-right_t11sd6.svg"/></button>
+            </form>
         </div>
+        <div class="modal-result">
+            <div class="result-content card">
+                <h2 class="title">Seu IMC é de XX</h2>
+                <button class="close-modal">X</button>
+            </div>
+       </div>
     </main>
     <script src="script.js"></script>
 </body>
