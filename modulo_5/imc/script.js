@@ -1,11 +1,10 @@
-const calcular = document.getElementById('calcular');
+import { Modal, handleAlert, imc } from './utils.js';
+
+const form = document.querySelector('form');
 const peso = document.getElementById('peso');
 const altura = document.getElementById('altura');
-const alerta = document.getElementById('alert');
-const modal = document.getElementById('modal');
 const imcResult = document.getElementById('imc-result');
-const form = document.querySelector('form');
-const closeModal = document.querySelector('.close-modal');
+
 
 form.onsubmit = (event) => {
     event.preventDefault();
@@ -17,24 +16,15 @@ const handleSubmit = () => {
     const height = Number(altura.value);
     const imcValue = imc(weight, height);
 
-    if(weight === 0 || height === 0 || isNaN(imcValue)) {
-        alerta.classList.add('open');
+    if(weight <= 0 || height <= 0 || isNaN(imcValue)) {
+        handleAlert.open();
         return;
     }
-    modal.classList.add('open');
+    Modal.open();
     imcResult.innerHTML = `Seu IMC é de ${imcValue}`;
 }
 
-closeModal.onclick = () => {
-    modal.classList.remove('open');
-    peso.value = '';
-    altura.value = '';
-}
-
 form.onchange = () => {
-    alerta.classList.remove('open');
+    handleAlert.close();
 }
 
-const imc = (weight, height) => {
-    return (weight / ((height / 100) ** 2)).toFixed(2);
-}
