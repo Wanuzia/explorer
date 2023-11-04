@@ -12,36 +12,48 @@
 <body>
     <div id="app">
         <button class="mode">
-            <span class="sr-only">Ativar/Desativar Light Mode</span>
+            <span class="sr-only">Ativar Light Mode</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
         <section id="timer" class="timer-info flex">
-                <span class="timer-minutes">25</span>
+                <span id="minutes" class="timer-minutes"></span>
                 <span>:</span>
-                <span class="timer-seconds">00</span>
+                <span id="seconds" class="timer-seconds"></span>
         </section>
         <section id="controls" class="timer-buttons-controls flex">
-                <button class="ph ph-play-circle">
-                <span class="sr-only">Iniciar contador</span>
+                <button 
+                    data-action="toggleRunning"
+                    class="ph ph-play-circle">
+                 <span class="sr-only">Iniciar contador</span>
                 </button>
-                <button class="ph ph-pause-circle">
-                <span class="sr-only">Pausar contador</span>
+                <button 
+                    data-action="toggleRunning"
+                    class="ph ph-pause-circle">
+                    <span class="sr-only">Pausar contador</span>
                 </button>
-                <button class="ph ph-timer secondary">
-                <span class="sr-only">Ajustar contador</span>
+                <button 
+                    data-action="setTimer"
+                    class="ph ph-timer secondary">
+                    <span class="sr-only">Ajustar contador</span>
                 </button>
-                <button class="ph ph-stop-circle secondary">
-                <span class="sr-only">Reiniciar contador</span>
+                <button 
+                    data-action="resetTimer"
+                    class="ph ph-stop-circle secondary">
+                    <span class="sr-only">Reiniciar contador</span>
                 </button>
-                <button class="ph ph-speaker-none secondary">
-                <span class="sr-only">Iniciar música</span>
+                <button 
+                    data-action="toggleMusic"
+                    class="ph ph-speaker-none secondary">
+                    <span class="sr-only">Iniciar música</span>
                 </button>
-                <button class="ph ph-speaker-high">
-                <span class="sr-only">Parar música</span>
+                <button 
+                    data-action="toggleMusic"
+                    class="ph ph-speaker-high">
+                    <span class="sr-only">Parar música</span>
                 </button>
         </section>
     </div>
-    <script src="script.js"></script>
+    <script src="src/main.js" type="module" defer></script>
 </body>
 </html>
