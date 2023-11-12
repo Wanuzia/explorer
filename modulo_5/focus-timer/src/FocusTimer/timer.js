@@ -1,8 +1,11 @@
 import state from './state.js'
 import * as elements from "./elements.js"
 import * as actions from "./actions.js"
+import { kitchenTimer } from './sounds.js'
 
 export const countdown = () => {
+    clearTimeout(state.countdownId)
+    
     if (!state.isRunning) {
         return
     }
@@ -18,13 +21,13 @@ export const countdown = () => {
 
      if (minutes < 0) {
         actions.resetTimer()
+        kitchenTimer.play()
          return
      }
 
      updateDisplay(minutes, seconds)
-     setTimeout(() => countdown(), 1000)
 
-
+     state.countdownId = setTimeout(() => countdown(), 1000)
 
 }
 
