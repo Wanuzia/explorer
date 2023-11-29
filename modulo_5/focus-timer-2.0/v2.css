@@ -6,6 +6,8 @@
 
 :root {
     --hue: 194;
+    --bg-color-music: #02799D;
+    --text-color-music: #F2F2F2;
     --bg-color: hsl(var(--hue), 5%, 7%);
     --text-color: hsl(var(--hue), 40%, 98%);
     --primary-color: hsl(var(--hue), 100%, 63%);
@@ -87,13 +89,17 @@ button {
 }
 
 .running .ph-play-circle, 
-.running .ph-timer,
-.music-on .ph-speaker-none,
-html:not(.music-on) .ph-speaker-high,
 html:not(.running) .ph-pause-circle {
     display: none;
 }
 
+.rain-music-on .ph-cloud-snow,
+.forest-music-on .ph-tree,
+.fire-music-on .ph-flame,
+.coffee-music-on .ph-storefront {
+    background-color: var(--bg-color-music);
+    color: var(--text-color-music);
+}
 
 #app-timer {
     display:flex;   
@@ -123,7 +129,7 @@ html:not(.running) .ph-pause-circle {
     }
 }
 
-#controls-timer-button {
+.sounds-container button {
     border-radius: 30%;
     background-color: var(--controls-bg-color);
     color: var(--controls-color);

@@ -12,6 +12,14 @@ export const registerCountrolsEvents = () => {
         actions[action]()
     }
     )   
+    elements.soundsControls.addEventListener('click', (event) => {
+        const action = event.target.dataset.action
+        if (typeof actions[action] !== "function") {
+            return
+        }
+        actions[action]()
+    }
+    )   
 }
 
 export const setMinutes = () => {
