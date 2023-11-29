@@ -25,10 +25,40 @@ elements.minutesValue.setAttribute('contenteditable', true)
 elements.minutesValue.focus()
 }
 
+
 export const resetTimer = () => {    
     state.isRunning = false
     document.documentElement.classList.remove('running')
     timer.updateDisplay()
     sound.buttonPressAudio.play()
 
+}
+
+//FocusTimer v2
+export const setTimerLess = () => {
+    const minutes = Number(elements.minutesValue.textContent)
+    const newMinutes = minutes - 5
+    
+    if (newMinutes < 5) {
+        return
+    }
+
+    elements.minutesValue.textContent = newMinutes.toString().padStart(2, '0')
+    timer.updateDisplay(newMinutes)
+
+    sound.buttonPressAudio.play()
+}
+
+export const setTimerPlus = () => {
+    const minutes = Number(elements.minutesValue.textContent)
+    const newMinutes = minutes + 5
+    
+    if (newMinutes > 60) {
+        return
+    }
+
+    elements.minutesValue.textContent = newMinutes.toString().padStart(2, '0')
+    timer.updateDisplay(newMinutes)
+
+    sound.buttonPressAudio.play()
 }
